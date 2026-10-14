@@ -1,0 +1,30 @@
+VELOX STUDIO 2.0
+Simpan inspirasimu.
+
+1. Ekstrak seluruh ZIP ini.
+2. Pasang Node.js 20.19+ (atau Node 22 LTS).
+3. Buka terminal di folder yang berisi package.json.
+4. Jalankan:
+      npm ci
+      npm start
+5. Buka http://localhost:3000
+
+JANGAN hanya membuka public/index.html dengan double click.
+Downloader membutuhkan server Node.js agar endpoint /api bekerja.
+
+Untuk fitur engine lengkap, pasang Python + yt-dlp dan ffmpeg.
+Hook npm mencoba menyiapkan yt-dlp, tetapi ffmpeg perlu tersedia di sistem.
+
+Jika menyalin .env.example ke .env tanpa mengubah PORT, port menjadi 8000.
+Buka http://localhost:8000 dalam kasus itu.
+
+Panduan lengkap: README.md
+Daftar perubahan: CHANGELOG.md
+Hasil pengujian & batasannya: docs/TESTING.md
+Preview: docs/preview-desktop.webp, docs/preview-mobile.webp, docs/preview-light.webp
+
+ZIP berisi source lengkap. node_modules, engine binary, cookie, credential,
+file media uji, dan cache tidak disertakan. Jalankan npm ci setelah ekstraksi.
+
+Konten publik tidak otomatis bebas hak cipta.
+Gunakan konten milikmu sendiri atau yang telah mendapat izin.

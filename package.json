@@ -1,0 +1,43 @@
+{
+  "name": "velox",
+  "version": "2.0.0",
+  "description": "VELOX Studio \u2014 your media workspace. Simpan inspirasimu.",
+  "private": true,
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "test": "node --test test/unit/ test/frontend/",
+    "test:live": "node --test test/live/",
+    "test:all": "node --test test/unit/ test/frontend/ test/live/",
+    "verify:docker": "bash scripts/verify-docker-order.sh",
+    "postinstall": "node scripts/ensure-ytdlp.js",
+    "ensure-engine": "node scripts/ensure-ytdlp.js",
+    "test:browser": "node test/browser/studio.smoke.cjs"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^4.21.2"
+  },
+  "keywords": [
+    "downloader",
+    "yt-dlp",
+    "tiktok",
+    "instagram",
+    "youtube",
+    "twitter",
+    "facebook",
+    "pinterest",
+    "social-media",
+    "no-watermark"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "jsdom": "^29.1.1",
+    "playwright": "^1.64.1"
+  }
+}
